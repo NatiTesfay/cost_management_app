@@ -1,0 +1,19 @@
+form {
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+form div {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 5px;
+  margin-top: 20px;
+}
+
+input {
+  display: block;
+  margin-bottom: 12px;
+}

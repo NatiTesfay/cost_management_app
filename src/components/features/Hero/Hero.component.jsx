@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <Card className="bg-dark text-white">
       <Card.Img
-        src="https://i.dailymail.co.uk/1s/2020/05/12/15/28302814-8311735-image-m-92_1589292158179.jpg"
+        src="https://spdload.com/wp-content/uploads/2020/10/%D0%9E%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0-%D0%B4%D0%BB%D1%8F-%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8-6.png"
         alt="Card image"
       />
       <Card.ImgOverlay>

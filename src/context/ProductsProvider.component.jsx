@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { createContext } from "react";
-import {getAllProducts} from '../service/products-rest'
+import {getAllProducts} from '../service/products'
 
 export const productsContext = createContext()
 

@@ -1,25 +1,30 @@
 import { Route, Routes } from "react-router-dom";
-import { Home, Dashboard, PageError } from "./router";
+import { Home, Dashboard, PageError, Dashboard2 } from "./router";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ProductsProvider from "../context/ProductsProvider.component";
 import OrdersProvider from "../context/OrdersProvider.component";
 import UsersProvider from "../context/UsersProvider.component";
+import ProductsProvider from "../context/ProductsProvider.component";
 
 export default function Router() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-
       <Route
         path="dashboard"
         element={
-          <ProductsProvider>
-            <OrdersProvider>
-              <UsersProvider>
-                <Dashboard />
-              </UsersProvider>
-            </OrdersProvider>
-          </ProductsProvider>
+          <OrdersProvider>
+            <Dashboard />
+          </OrdersProvider>
+        }
+      />
+      <Route
+        path="/dashboard2"
+        element={
+          <UsersProvider>
+            <ProductsProvider>
+              <Dashboard2 />
+            </ProductsProvider>
+          </UsersProvider>
         }
       />
 

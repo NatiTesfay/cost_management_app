@@ -12,7 +12,10 @@ export default function Header() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Link style={{color:'#fff', textDecoration: 'none'}} to="dashboard">Dashboard</Link>
+            <Link style={{color:'#fff', textDecoration: 'none'}} to="dashboard">UserInfo</Link>
+          </Nav>
+          <Nav className="me-auto">
+            <Link style={{color:'#fff', textDecoration: 'none'}} to="dashboard2">Add User</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

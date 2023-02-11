@@ -1,18 +1,17 @@
 import React from "react";
 import { DataGrid } from "@mui/x-data-grid";
 import { Paper } from "@mui/material";
-import Button from "@mui/material/Button";
 import { useState, useEffect } from "react";
 
 export default function EmployeeBtn({ data }) {
   const [formData, setFormData] = useState({
-    fullName: '',
-    phone: ' ',
-    email: '',
+    fullName: "",
+    phone: " ",
+    email: "",
   });
 
   useEffect(() => {
-    const storedData = JSON.parse(localStorage.getItem('user')) || {};
+    const storedData = JSON.parse(localStorage.getItem("user")) || {};
     setFormData(storedData);
   }, []);
 
@@ -22,11 +21,9 @@ export default function EmployeeBtn({ data }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    localStorage.setItem('user', JSON.stringify(formData));
+    localStorage.setItem("user", JSON.stringify(formData));
     // Perform additional logic, such as sending a request to the server to log the user in
   };
-
-
 
   const customersColumns = [
     {

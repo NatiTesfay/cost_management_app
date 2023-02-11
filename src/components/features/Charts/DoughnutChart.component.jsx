@@ -7,22 +7,22 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 
 export default function DoughnutChart({items}) {
     const CrossbodyCategoryArr = items.filter(function(item){
-        return (item.department.departmentName == "HANDBAGS - CROSSBODY BAGS" )});
+        return (item.department.departmentName === "HANDBAGS - CROSSBODY BAGS" )});
 
     const LogoCategoryArr = items.filter(function(item){
-        return (item.department.departmentName == "LOGO BAGS" )});
+        return (item.department.departmentName === "LOGO BAGS" )});
 
     const PartywearCategoryArr = items.filter(function(item){
-        return (item.department.departmentName == "Partywear - Rhinestones" || item.department.departmentName == "Partywear - Rhinestones" )});
+        return (item.department.departmentName === "Partywear - Rhinestones" || item.department.departmentName === "Partywear - Rhinestones" )});
 
     const BackpacksCategoryArr = items.filter(function(item){
-        return (item.department.departmentName == "Belt Bags & Backpacks" || item.department.departmentName == "BELT BAGS & BACKPACKS" )});
+        return (item.department.departmentName === "Belt Bags & Backpacks" || item.department.departmentName === "BELT BAGS & BACKPACKS" )});
 
     const ClutchesCategoryArr = items.filter(function(item){
-        return (item.department.departmentName == "Clutches & Mini Bags" || item.department.departmentName == "CLUTCHES & MINI BAGS" )});
+        return (item.department.departmentName === "Clutches & Mini Bags" || item.department.departmentName === "CLUTCHES & MINI BAGS" )});
 
     const ShoulderCategoryArr = items.filter(function(item){
-        return (item.department.departmentName == "Shoulder Bags" || item.department.departmentName == "SHOULDER BAGS" )});
+        return (item.department.departmentName === "Shoulder Bags" || item.department.departmentName === "SHOULDER BAGS" )});
 
         const options = {
           responsive: true,

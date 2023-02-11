@@ -17,6 +17,9 @@ export default function Header() {
           <Nav className="me-auto">
             <Link style={{color:'#fff', textDecoration: 'none'}} to="dashboard2">Add User</Link>
           </Nav>
+          <Nav className="me-auto">
+            <Link style={{color:'#fff', textDecoration: 'none'}} to="contact">Contact</Link>
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>

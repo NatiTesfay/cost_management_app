@@ -1,5 +1,6 @@
 const baseUrl = 'https://data-that.onrender.com/api/orders'
 
+
 export const getAllOrders = async() => {
     try{
         return await fetch(`${baseUrl}`)

@@ -19,7 +19,7 @@ ChartJS.register(
   Legend
 );
 
-export default function OrderPerMonthChart({ items }) {
+export default function OrderPerYearChart({ items }) {
   const options = {
     responsive: true,
     plugins: {
@@ -28,22 +28,14 @@ export default function OrderPerMonthChart({ items }) {
       },
       title: {
         display: true,
-        text: "number of orders per month",
+        text: "orders per year",
       },
     },
   };
   const FilteredByOrderCost = items?.filter(
     (item) => item.orderInfo.purchaseSum > 700
   );
-  const labels = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-  ];
+  const labels = [ "2019", "2020", "2021", "2022", "2023"];
 
   const data = {
     labels,
@@ -56,7 +48,7 @@ export default function OrderPerMonthChart({ items }) {
         backgroundColor: "#cd2134",
       },
       {
-        label: "Avg of items per order ",
+        label: "Avg of items per year ",
         data: [
           ...FilteredByOrderCost.slice(0, 5).map(
             (item) => item.orderInfo.purchaserInfo.itemsNum

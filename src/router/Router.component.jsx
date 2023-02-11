@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { Home, Dashboard, PageError, Dashboard2 } from "./router";
+import { Home, Dashboard, PageError, Dashboard2 , ContactPage} from "./router";
 import "bootstrap/dist/css/bootstrap.min.css";
 import OrdersProvider from "../context/OrdersProvider.component";
 import UsersProvider from "../context/UsersProvider.component";
@@ -27,6 +27,7 @@ export default function Router() {
           </UsersProvider>
         }
       />
+      <Route path="contact" element={<ContactPage />} />
 
       <Route path="*" element={<PageError />} />
     </Routes>
